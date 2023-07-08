@@ -38,11 +38,13 @@
   line-height: 1;
   object-fit: contain;
   color: hsl(0, 0%, 100%);
+  transition: background-color 0.5s ease-in-out;
 }
 
 body {
   background-color: var(---bg-dark);
   min-width: 250px;
+  transition: background-color 0.5s ease-in-out;
 }
 
 body::-webkit-scrollbar {
@@ -66,6 +68,7 @@ html {
   width: 100vw;
   z-index: -1;
   border-radius: 0 0 3rem 3rem;
+  transition: background-color 0.5s ease-in-out;
 }
 
 /* The switch - the box around the slider */
@@ -74,6 +77,7 @@ html {
   display: inline-block;
   width: 48px;
   height: 24px;
+  outline: none;
 }
 
 /* Hide default HTML checkbox */
@@ -94,6 +98,7 @@ html {
   background: linear-gradient(45deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  outline: none;
 }
 
 .slider:before {
@@ -120,6 +125,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+  outline: none;
 }
 
 /* Rounded sliders */
@@ -144,10 +150,10 @@ input:checked + .slider:before {
 
 /* Apply animation to the toggle */
 input:checked + .slider:before {
-  -webkit-animation: toggleMove 0.6s;
-  -moz-animation: toggleMove 0.6s;
-  -o-animation: toggleMove 0.6s;
-  animation: toggleMove 0.6s;
+  -webkit-animation: toggleMove 0.5s;
+  -moz-animation: toggleMove 0.5s;
+  -o-animation: toggleMove 0.5s;
+  animation: toggleMove 0.5s;
 }
 
 .header {
@@ -185,6 +191,7 @@ input:checked + .slider:before {
 .followers,
 h3 {
   color: var(--blue-text-dark);
+  transition: color 0.5s ease-in-out;
 }
 
 .dashboard,
@@ -202,11 +209,13 @@ h3 {
   background-color: var(--card-bg-dark);
   border-radius: 0.5rem;
   text-align: center;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .card:hover {
   background-color: hsl(228, 25%, 27%);
   cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .fb {
