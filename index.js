@@ -7,6 +7,8 @@ document.querySelector(".slider").addEventListener("click", () => {
 
   document.querySelector(".slider").classList.toggle("slider_light");
 
+  document.querySelector(".header_text").classList.toggle("header_text_light");
+
   const cards = document.querySelectorAll(".card");
   cards.forEach((card) => {
     card.classList.toggle("card_light");
