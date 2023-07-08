@@ -42,6 +42,7 @@
 
 body {
   background-color: var(---bg-dark);
+  min-width: 250px;
 }
 
 body::-webkit-scrollbar {
@@ -253,10 +254,13 @@ img {
 }
 
 .overview_title {
-  font-size: 2.4rem;
   max-width: 130rem;
   padding: 1.8rem 1rem;
   margin: 0 auto;
+}
+
+.overview_title > h2 {
+  font-size: 2.4rem;
 }
 
 .small-card,
@@ -286,12 +290,24 @@ img {
   .big-card {
     width: 48%;
   }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .overview_title > h2 {
+    font-size: 2.2rem;
+  }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 580px) {
   .small-card,
   .big-card {
     width: 100%;
+  }
+
+  h1 {
+    font-size: 2.4rem;
   }
 
   .header {
@@ -307,6 +323,10 @@ img {
   .toggle {
     padding-top: 1.5rem;
     justify-content: space-between;
+  }
+
+  .overview_title > h2 {
+    font-size: 2.2rem;
   }
 }
 
